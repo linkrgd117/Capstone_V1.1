@@ -1,0 +1,328 @@
+body{
+    margin: 0px;
+}
+
+.title{
+    font-family: 'Lobster', cursive;
+    font-size: 55px;
+}
+
+.subtitle{
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+}
+
+.fontcyan{
+    color: cyan;
+} 
+
+.fontwhite{
+    color: white;
+}
+
+#presentation{
+    background-color: black;
+    padding-bottom: 100px;
+}
+
+.flex-presentation{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile{  
+    width: 350px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.profile img{
+    border-radius: 50%;
+    margin-top: 50px;
+    width: 250px;
+}
+
+.profile p{
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.photo{
+    background-color: cyan;
+    padding-bottom: 50px;
+}
+
+.triangle{
+    width: 0;
+	height: 0;
+    background: transparent;
+	border-left: 175px solid transparent;
+	border-right: 175px solid transparent;
+	border-top: 80px solid cyan;
+}
+
+.hello{
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 800px;
+    min-width: 600px;
+}
+
+#career{
+    background-color: cyan;
+    padding: 50px;
+    text-align: center;
+}
+
+#career .title{
+    margin: 0px;
+}
+
+.flex-career{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.school img{
+    width: 42cqw;
+    max-width: 500px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+.school p{
+    margin: 0px;
+    height: 1em;
+}
+
+.title-school{
+    font-size: 55px;
+}
+
+.left{
+    padding-left: 50px;
+    text-align: left;
+    border-left: 2px solid black;
+}
+
+.right{
+    padding-right: 50px;
+    text-align: right;
+    border-right: 2px solid black;
+}
+
+#experience{
+    background-color: black;
+}
+
+.grid-experience{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 150px 1fr 150px 100px;
+    padding: 100px 0px;
+}
+
+.title-experience{
+    margin-left: 10cqw;
+}
+
+.text-experience{
+    min-height: 300px;
+    padding: 0px 10cqw;
+    text-align: justify;
+}
+
+.flex-img-work{
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-work img{
+    width: 30cqw;
+}
+
+.technologies{
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-around;
+    width: 90cqw;
+    margin-left: 5cqw;
+    padding-top: 50px;
+}
+
+.technologies img{
+    height: 80px;
+}
+
+.text-technologies{
+    grid-column: span 2;
+    border-top: 5px solid white;
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 90cqw;
+    margin-left: 5cqw;
+    text-align: center;
+}
+
+#skills{
+    padding: 50px;
+    text-align: center;
+}
+
+#skills ul{
+    list-style: none;
+    padding: 0px;
+    margin-top: 50px;
+}
+
+#skills li{
+    display: inline-block;
+    width: 25cqw;
+}
+
+#skills img{
+    width: 50cqw;
+}
+
+#about{
+    background-color: black;
+}
+
+.flex-about{
+    display: flex;
+}
+
+#about ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+
+#about li{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#about img{
+    width: 40cqw;
+}
+
+#contact{
+    background-color: black;
+    padding: 70px 0px;
+
+}
+
+.label{
+    text-align: center;
+    background-color: cyan;
+    width: 900px;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.flex-contact{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-contact > div{
+    margin: 10px;
+}
+
+.flex-contact img{
+    height: 60px;
+}
+
+.flex-contact p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+}
+
+@media (max-width: 1080px) {
+
+    .title{
+        font-size: 50px;
+    }
+    
+    .subtitle{
+        font-size: 25px;
+    }
+    
+    p{
+        font-size: 20px;
+    }
+
+    .flex-presentation{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-presentation .profile{
+        margin: 0px;
+    }
+
+    .flex-career{
+        flex-direction: column;
+    }
+
+    .school{
+        border: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .right{
+        padding-bottom: 25px;
+        border-bottom: 2px solid black;
+    }
+
+    .left{
+        padding-top: 25px;
+        border-top: 2px solid black;
+    }
+
+    .school img{
+        width: 500px;
+    }
+
+    .flex-img-work{
+        grid-row: span 1;
+    }
+
+    .project{
+        padding-top: 50px;
+        grid-column: span 2;
+    }
+
+    #skills img{
+        width: 80cqw;
+    }
+
+    .label{
+        width: 700px;
+    }
+    
+    .flex-contact img{
+        height: 40px;
+    }
+    
+    .flex-contact p{
+        font-size: 17px;
+    }
+
+}
